@@ -1,25 +1,31 @@
-# Ember-cli-list-filter
+# List Filter
 
-This README outlines the details of collaborating on this Ember addon.
+A list filter component with a text input for the [ember-cli](http://www.ember-cli.com/).
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+npm i ember-cli-list-filter
+```
 
-## Running
+## Usage
+
+```hbs
+{{list-filter list=myObjectList partial='object' properties='name title description'}}
+```
+
+## Development
+
+### Running
 
 * `ember server`
 * Visit your app at http://localhost:4200.
 
-## Running Tests
+### Running Tests
 
 * `ember test`
 * `ember test --server`
 
-## Building
+### Building
 
 * `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
