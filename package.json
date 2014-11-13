@@ -1,6 +1,6 @@
 {
-  "name": "ember-cli-list-filter",
-  "version": "0.0.0",
+  "name": "ember-list-filter",
+  "version": "0.0.1",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -10,7 +10,7 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/johnotander/ember-list-filter",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -31,7 +31,10 @@
     "glob": "^4.0.5"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "list",
+    "filter",
+    "component"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
