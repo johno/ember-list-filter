@@ -1,1 +1,7 @@
-{{yield}}
+{{input value=filterQuery placeholder=placeholder}}
+
+<ul {{bindAttr class=listClass}}>
+  {{#each object in filteredList}}
+    {{! render 'Foo' object}}
+  {{/each}}
+</ul>

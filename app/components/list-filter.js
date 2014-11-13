@@ -5,7 +5,10 @@ export default Ember.Component.extend({
   properties: 'id',
   filterQuery: '',
   strictMatch: false,
+  partial: '',
+
   listClass: '',
+  inputClass: '',
   placeholder: 'Search...',
 
   filteredList: function() {
@@ -37,8 +40,16 @@ export default Ember.Component.extend({
   }.property('list', 'filterQuery'),
 
   formattedProperties: function() {
-    return this.get('attributes').split(',').map(function() {
-      return this.trim();
+    return this.get('properties').split().map(function(prop) {
+      return prop.trim();
     });
-  }.property('properties')
+  }.property('properties'),
+
+  listItemPartial: function() {
+    return this.get('partial');
+  }.property('partial')
 });
+
+function isLike(one, two) {
+  return one.toString().indexOf(two.toString()) !== -1;
+}
