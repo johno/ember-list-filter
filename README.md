@@ -5,7 +5,7 @@ A list filter component with a text input for the [ember-cli](http://www.ember-c
 ## Installation
 
 ```
-npm i ember-cli-list-filter
+npm i ember-list-filter
 ```
 
 ## Usage
@@ -29,3 +29,17 @@ npm i ember-cli-list-filter
 ### Building
 
 * `ember build`
+
+## License
+
+MIT
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+Crafted with <3 by [John Otander](http://johnotander.com) ([@4lpine](https://twitter.com/4lpine)).

@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-list-filter'
+  name: 'ember-list-filter'
 };
