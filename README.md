@@ -7,7 +7,7 @@ A list filter component with a text input for the [ember-cli](http://www.ember-c
 ## Installation
 
 ```
-npm i ember-list-filter
+npm i ember-list-filter --save-dev
 ```
 
 ## Usage
