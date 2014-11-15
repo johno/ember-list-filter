@@ -40,7 +40,7 @@ export default Ember.Component.extend({
   }.property('list', 'filterQuery'),
 
   formattedProperties: function() {
-    return this.get('properties').split().map(function(prop) {
+    return this.get('properties').split(' ').map(function(prop) {
       return prop.trim();
     });
   }.property('properties')
