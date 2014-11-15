@@ -11,7 +11,7 @@ npm i ember-list-filter
 ## Usage
 
 ```hbs
-{{list-filter list=myObjectList partial='object' properties='name title description'}}
+{{list-filter list=myUserList partial='list-user' properties='name title description'}}
 ```
 
 ## Development

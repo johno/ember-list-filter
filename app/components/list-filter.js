@@ -43,11 +43,7 @@ export default Ember.Component.extend({
     return this.get('properties').split().map(function(prop) {
       return prop.trim();
     });
-  }.property('properties'),
-
-  listItemPartial: function() {
-    return this.get('partial');
-  }.property('partial')
+  }.property('properties')
 });
 
 function isLike(one, two) {
