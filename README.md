@@ -12,9 +12,24 @@ npm i ember-list-filter
 
 ## Usage
 
+In a template, you can call the list filter component:
+
 ```hbs
 {{list-filter list=myUserList partial='list-user' properties='name title description'}}
 ```
+
+Then, make sure you define a partial/template. The above example uses `list-user`:
+
+`list-user.hbs`
+```hbs
+<li>
+  {{gravatar-image email=listFilterObject.email}}
+  {{listFilterObject.name}}
+  {{listFilterObject.email}}
+</li>
+```
+
+Note the `listFilterObject` keyword, this is the variable assigned for the `#each` block in the list filter component.
 
 ## Development
 

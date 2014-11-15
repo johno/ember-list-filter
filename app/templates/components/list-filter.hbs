@@ -1,7 +1,7 @@
 {{input value=filterQuery placeholder=placeholder}}
 
 <ul {{bindAttr class=listClass}}>
-  {{#each object in filteredList}}
+  {{#each listFilterObject in filteredList}}
     {{partial partial}}
   {{/each}}
 </ul>
