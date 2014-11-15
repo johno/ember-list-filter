@@ -1,5 +1,7 @@
 # List Filter
 
+[![Build Status](https://travis-ci.org/johnotander/ember-list-filter.svg?branch=master)](https://travis-ci.org/johnotander/ember-list-filter)
+
 A list filter component with a text input for the [ember-cli](http://www.ember-cli.com/).
 
 ## Installation

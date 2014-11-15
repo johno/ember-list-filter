@@ -1,5 +1,6 @@
 {
   "name": "ember-list-filter",
+  "description": "A list filter component with a text input for Ember.",
   "version": "0.0.1",
   "directories": {
     "doc": "doc",
@@ -34,7 +35,8 @@
     "ember-addon",
     "list",
     "filter",
-    "component"
+    "component",
+    "search"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
