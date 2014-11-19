@@ -11,11 +11,10 @@ var fixtures = [];
 for(var i = 0; i < 1000; i++) {
   fixtures.push({
     id: i,
-    aNumber: i*3
+    aNumber: i*3,
+    aString: (i*6).toString()
   });
 }
-
-console.log(fixtures);
 
 Foo.reopenClass({
   FIXTURES: fixtures
