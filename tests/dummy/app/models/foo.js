@@ -6,18 +6,19 @@ var Foo = DS.Model.extend({
   anotherString: DS.attr('string')
 });
 
+var fixtures = [];
+
+for(var i = 0; i < 1000; i++) {
+  fixtures.push({
+    id: i,
+    aNumber: i*3
+  });
+}
+
+console.log(fixtures);
+
 Foo.reopenClass({
-  FIXTURES: [{
-    id: 1,
-    aNumber: 123,
-    aString: 'blah',
-    anotherString: 'another blah'
-  }, {
-    id: 2,
-    aNumber: 222,
-    aString: 'blah',
-    anotherString: '222222 another blah'
-  }]
+  FIXTURES: fixtures
 });
 
 export default Foo;
