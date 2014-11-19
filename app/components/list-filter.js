@@ -21,21 +21,17 @@ export default Ember.Component.extend({
     }
 
     return this.get('list').filter(function(object) {
-      var filterMatch = false;
-
-      props.forEach(function(prop) {
+      return props.some(function(prop) {
         if (strictMatch) {
           if (Ember.isEqual(object.get(prop), query)) {
-            filterMatch = true;
+            return true;
           }
         } else {
           if (isLike(object.get(prop), query)) {
-            filterMatch = true;
+            return true;
           }
         }
       });
-
-      return filterMatch;
     });
   }.property('list', 'filterQuery'),
 
@@ -47,5 +43,9 @@ export default Ember.Component.extend({
 });
 
 function isLike(one, two) {
+  if (!one || !two) {
+    return false;
+  }
+
   return one.toString().indexOf(two.toString()) !== -1;
 }
