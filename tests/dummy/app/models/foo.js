@@ -1,4 +1,5 @@
 import DS from 'ember-data';
+import faker from 'faker';
 
 var Foo = DS.Model.extend({
   name: DS.attr('string'),
@@ -10,7 +11,7 @@ var fixtures = [];
 for(var i = 0; i < 1000; i++) {
   fixtures.push({
     id: i,
-    name: Math.random().toString(),
+    name: faker.name.firstName() + ' ' + faker.name.lastName(),
     email: 'example' + i +'@example.com'
   });
 }
